@@ -5,6 +5,7 @@ from captcha.image import ImageCaptcha
 import captcha
 import random
 import asyncio
+import os
 
 client = discord.Client()
 role_id = 835647291628322837
@@ -284,5 +285,5 @@ async def on_message(message):
         except:
             pass
 
-
-client.run('ODM3ODc4MTAxNTY4MTI2OTg2.YIy8yg.9GrIHBdGuelKKjrvIiWuw0mXD8Q')
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
