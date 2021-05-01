@@ -1,0 +1,4 @@
+discord==1.0.1
+openpyxl==3.0.7
+captcha==0.3
+asyncio==3.4.3
